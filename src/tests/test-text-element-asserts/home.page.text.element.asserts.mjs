@@ -21,10 +21,10 @@ class HomePageTextElementAsserts {
         await expect(homePageShopCartSectionTitle).toBe("Shopping Cart");
     }
 
-    //home page text element assert test method
+    //home page empty shopping cart text element assert test method
     async isHomePageEmptyShopCartTextElementAsExpected(page){
         const homePage = new HomePage(page);
-        //text element assert (singular elements)
+        //text element assert (singular element)
         //shopping cart section
         //assert home page shopping cart section title is as expected
         const homePageEmptyShopCartWarning = await homePage.getHomePageEmptyShopCartWarningText();
